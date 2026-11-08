@@ -18,7 +18,7 @@ body {
   max-height: 800px;
   height: 100vh;
 
-  background-image: url(../images/"background_header.svg");
+  background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -98,20 +98,18 @@ body {
   font-weight: 500;
   color: #6f6f6f;
 }
-
-.header-hours {
-}
 /* ================== */
 /* Sección Reservación*/
 /* ================== */
 
 .reservation {
   background-color: #ffd6c5;
-  background-image: url(../images/background_reservation.svg);
+  background-image: url("../images/background_reservation.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 160px 0 120px;
+
+  padding: 100px 0px 120px;
 }
 
 /* Título de la Sección*/
@@ -195,5 +193,101 @@ body {
 .reservation_checkbox {
   width: 20px;
   height: 20px;
+  margin: 0;
+}
+/* ============================= */
+/* PIE DE PÁGINA */
+/* ============================= */
+
+.footer {
+  background-color: #d35722;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Círculo decorativo */
+
+.footer__circle {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #e96e3a;
+
+  position: absolute;
+  top: -120px;
+  left: -80px;
+  z-index: 0;
+}
+
+/* Logotipo */
+
+.footer_logo {
+  width: 105px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Redes sociales */
+
+.footer_social {
+  position: relative;
+  z-index: 1;
+}
+
+.footer_social-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+.footer_social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_social-item {
+  margin-bottom: 8px;
+}
+
+.footer_social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Iconos */
+
+.footer_social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Copyright */
+
+.footer_copyright {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  color: #ffffff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
 }
