@@ -61,6 +61,121 @@
       </p>
     </header>
     <main class="content"></main>
-    <footer class="footer"></footer>
+    <!-- SECCIÓN DE RESERVA -->
+    <section class="reservation" id="reservation">
+    <h2 class="reservation_title">Reservar una mesa</h2>
+    <form class="reservation_form">
+      <fieldset class="reservation_fieldset">
+        <!--Nombre-->
+        <label class="reservation_label" for="name">Nombre *</label>
+        <input
+          class="reservation_input"
+          type="text"
+          id="name"
+          placeholder="Nombre"
+          required
+        />
+        <!--Número de comensales-->
+        <label class="reservation_label" for="guests">
+          Número de comensales *
+        </label>
+        <input
+          class="reservation_input"
+          type="number"
+          id="guests"
+          placeholder="1-8"
+          min="1"
+          max="8"
+          required
+        />
+        <!--Fecha y hora-->
+        <label class="reservation_label" for="date"> Fecha y hora * </label>
+        <input
+          class="reservation_input"
+          type="datetime-local"
+          id="date"
+          name="date"
+          required
+        />
+        <!--Correo-->
+        <label class="reservation_label">Tu correo electrónico *</label>
+        <input
+          class="reservation_input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@mail.com"
+          required
+        />
+      </fieldset>
+      <!--Botón-->
+      <button class="reservation_button" type="submit">
+        Reservar una mesa
+      </button>
+
+      <!--Checkbox-->
+      <label class="reservation_checkbox-label" for="terms">
+        <input
+          class="reservation_checkbox"
+          type="checkbox"
+          id="terms"
+          name="terms"
+          required
+        />
+        Acepto los términos de uso
+      </label>
+    </form>
+  </section>
+  <!-- PIE DE PÁGINA -->
+   <footer class="footer">
+  <!-- Círculo -->
+   <div class ="footer_circle"></div>
+   <!-- Logotipo-->
+    <img
+    class="footer_logo"
+    src="./images/logo_coffeeshop_dark.svg"
+    alt="Logotipo Triple Espresso"
+    >
+       <!-- Redes Sociales-->
+      <footer class="footer">
+        <h3 class="footer_social-heading">Redes Sociales</h3>
+        <ul class="footer_social-list">
+          <li class="footer_social-item">
+            <a
+            class="footer_social-link"
+            href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer"
+            >
+            <img
+            class="footer_social-icon"
+            scr="./images/facebook_white.svg"
+            alt="Icono facebook"
+            >Facebook
+            </a>
+          </li>
+          <li class="footer_social_item">
+            <a
+            class="footer_social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <img
+          class="footer_social-icon"
+          src="./images/instagram_white.svg"
+          alt="Instagram"
+          >
+          Instagram
+        </a>
+          </li>
+        </ul>
+
+   </footer>
+     <!-- Copyright -->
+      <p class="footer_copyright">
+      © 2026 Claudia Gabriela Almanza
+      </p>
+    </body>
+
   </body>
 </html>
