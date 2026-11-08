@@ -1,107 +1,199 @@
-body{
-    min-width: 1100px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Inter",Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #FFFFFF;
+body {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #ffffff;
+}
+/* ================== */
+/* Sección Encabezado*/
+/* ================== */
 
+.header {
+  position: relative;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+
+  background-image: url(../images/"background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  width: 105px;
+  height: 39px;
 }
 
-
-.header{
-    position: relative;
-    min-height: 720px;
-    max-height: 800px;
-    height: 100vh;
-        
-    background-image:url("background_header.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
+.nav .nav-links {
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  display: flex;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 500;
 }
-.logo{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-
-    width: 105px;
-    height: 39px;
+.header-title {
+  position: absolute;
+  top: 183px;
+  left: 80px;
+  max-width: 709px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
 }
-
-.nav .nav-links{
-    position: absolute;
-    top: 30px;
-    right: 26px;
-    display: flex;
-    gap: 20px;
-    font-style: normal;
-    font-weight: 500;
-
-}
-.header-title{
-    position: absolute;
-    top: 183px;
-    left: 80px;
-    max-width: 709px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 72px;
-    letter-spacing: -1px;
-
-
-}
-.span-accent{
-    font-family: "Noto Serif", 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 58px;
-    line-height: 72px;
-    color: #ff976b;
+.span-accent {
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #ff976b;
 }
 
-.header-description{
-    position: absolute;
-    top: 356.50px;
-    left: 80px;
-    max-width: 683px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+.header-description {
+  position: absolute;
+  top: 356.5px;
+  left: 80px;
+  max-width: 683px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
-.header-image{
-    position: absolute;
-    top: 124px;
-    right: 5px;
-    width: 646px;
-    height: 568px;
+.header-image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
 }
-.header-info{
-    position: absolute;
-    left: 80px;
-    bottom: 40px;
+.header-info {
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
 }
 
 .header-address {
-    position: absolute;
+  position: absolute;
 
-    right: 80px;
-    bottom: 40px;
+  right: 80px;
+  bottom: 40px;
 
-    text-align: right;
+  text-align: right;
 }
-.info-text{
-    margin: 0;
-    font-style: normal;
-    font-weight: 500;
-    color: #6f6f6f;
+.info-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  color: #6f6f6f;
 }
 
-.header-hours{
-    
+.header-hours {
+}
+/* ================== */
+/* Sección Reservación*/
+/* ================== */
+
+.reservation {
+  background-color: #ffd6c5;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 160px 0 120px;
+}
+
+/* Título de la Sección*/
+.reservation_title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 88%;
+  color: #000;
+}
+/*Formulario*/
+.reservation_form {
+  max-width: 385px;
+  margin: 0 auto;
+}
+/*Fieldset*/
+.reservation_fieldset {
+  border: 1px solid #838383;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+/*labels*/
+.reservation_label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+/*Campos de entrada*/
+.reservation_input {
+  width: 100%;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  padding: 0 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+.reservation_input:last-of-type {
+  margin-bottom: 0;
+}
+
+/*Botón*/
+.reservation_button {
+  width: 100%;
+  height: 32px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e96e3a;
+  color: #fff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/*Checkbox*/
+.reservation_checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.reservation_checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }
