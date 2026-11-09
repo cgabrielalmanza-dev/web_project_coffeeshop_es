@@ -102,6 +102,10 @@ body {
 /* Sección Reservación*/
 /* ================== */
 
+/* ============================= */
+/* SECCIÓN DE RESERVA */
+/* ============================= */
+
 .reservation {
   background-color: #ffd6c5;
   background-image: url("../images/background_reservation.svg");
@@ -109,44 +113,52 @@ body {
   background-position: center;
   background-size: cover;
 
-  padding: 100px 0px 120px;
+  padding: 100px 0 120px;
 }
 
-/* Título de la Sección*/
-.reservation_title {
+/* Título de la sección */
+
+.reservation__title {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   text-align: center;
-  margin: 0 0 88%;
-  color: #000;
+  margin: 0 0 88px;
+  color: #000000;
 }
-/*Formulario*/
-.reservation_form {
+
+/* Formulario */
+
+.reservation__form {
   max-width: 385px;
   margin: 0 auto;
 }
-/*Fieldset*/
-.reservation_fieldset {
-  border: 1px solid #838383;
+
+/* Agrupación de campos */
+
+.reservation__fieldset {
   padding: 8px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-/*labels*/
-.reservation_label {
+
+/* Etiquetas */
+
+.reservation__label {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
   margin-bottom: 8px;
 }
-/*Campos de entrada*/
-.reservation_input {
+
+/* Campos de entrada */
+
+.reservation__input {
   width: 100%;
   height: 32px;
   box-sizing: border-box;
@@ -154,32 +166,40 @@ body {
   border-radius: 4px;
   padding: 0 12px;
   font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 32px;
 }
-.reservation_input:last-of-type {
+
+/* El último campo no necesita margen inferior */
+
+.reservation__input:last-of-type {
   margin-bottom: 0;
 }
 
-/*Botón*/
-.reservation_button {
+/* Botón de reserva */
+
+.reservation__button {
   width: 100%;
   height: 32px;
   margin-top: 28px;
   border: none;
   border-radius: 4px;
   background-color: #e96e3a;
-  color: #fff;
+  color: #ffffff;
 
   font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
 }
 
-/*Checkbox*/
-.reservation_checkbox-label {
+/* Casilla de verificación */
+
+.reservation__checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,11 +210,13 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-.reservation_checkbox {
+
+.reservation__checkbox {
   width: 20px;
   height: 20px;
   margin: 0;
 }
+
 /* ============================= */
 /* PIE DE PÁGINA */
 /* ============================= */
@@ -203,7 +225,7 @@ body {
   background-color: #d35722;
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 270px;
   padding: 60px;
   display: flex;
   justify-content: space-between;
@@ -226,46 +248,48 @@ body {
 
 /* Logotipo */
 
-.footer_logo {
+.footer__logo {
   width: 105px;
-  position: relative;
-  z-index: 2;
-}
-
-/* Redes sociales */
-
-.footer_social {
   position: relative;
   z-index: 1;
 }
 
-.footer_social-heading {
+/* Redes sociales */
+
+.footer__social {
+  position: relative;
+  z-index: 1;
+}
+
+.footer__social-heading {
   font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  font-weight: 700;
   line-height: 20px;
   margin: 0 0 20px;
   color: #ffffff;
 }
 
-.footer_social-list {
+.footer__social-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer_social-item {
+.footer__social-item {
   margin-bottom: 8px;
 }
 
-.footer_social-link {
+.footer__social-link {
   display: flex;
   align-items: center;
   gap: 10px;
 
   font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
@@ -273,21 +297,89 @@ body {
 
 /* Iconos */
 
-.footer_social-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
 }
 
 /* Copyright */
 
-.footer_copyright {
+.footer__copyright {
   position: absolute;
+  top: 308px;
   bottom: 60px;
-  left: 60px;
+  left: 80px;
   color: #ffffff;
 
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+}
+
+/* ============================= */
+/* ESTADOS HOVER */
+/* ============================= */
+
+/* Enlaces de navegación */
+
+.nav .nav-links {
+  transition: color 0.3s ease;
+}
+.nav .nav-links:hover {
+  color: #ff976b;
+}
+
+/* Botón del formulario */
+
+.reservation__button {
+  transition: opacity 0.3s ease;
+}
+
+.reservation__button:hover {
+  opacity: 0.7;
+}
+
+/* Enlaces de redes sociales */
+
+.footer__social-link {
+  transition: color 0.3s ease;
+}
+
+.footer__social-link:hover {
+  color: #ffd6c5;
+}
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .reservation {
+    padding: 100px 20px;
+  }
+
+  .reservation__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    margin-bottom: 50px;
+  }
+
+  .reservation__form {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 40px 25px;
+
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__copyright {
+    left: 25px;
+    bottom: 25px;
+  }
 }

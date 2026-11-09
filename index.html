@@ -26,7 +26,7 @@
       <nav class="nav">
         <div class="nav-links">
           <a href="#reservation">Reservar una mesa</a>
-          <a href="#contacto">Contactos</a>
+          <a href="#footer__social">Contactos</a>
         </div>
       </nav>
       <!-- 4. Título del encabezado -->
@@ -64,134 +64,136 @@
 
     <!-- SECCIÓN DE RESERVA -->
     <section class="reservation" id="reservation">
-    <h2 class="reservation_title">Reservar una mesa</h2>
-    <form class="reservation_form">
-      <fieldset class="reservation_fieldset">
-        <!--Nombre-->
-        <label class="reservation_label" for="name">Nombre *</label>
-        <input
-          class="reservation_input"
-          type="text"
-          id="name"
-          placeholder="Nombre"
-          required
-        />
-        <!--Número de comensales-->
-        <label class="reservation_label" for="guests">
-          Número de comensales *
+      <h2 class="reservation__title">Reservar una mesa</h2>
+
+      <form class="reservation__form">
+        <fieldset class="reservation__fieldset">
+          <!-- Nombre -->
+          <label class="reservation__label" for="name"> Nombre * </label>
+
+          <input
+            class="reservation__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre"
+            required
+          />
+
+          <!-- Número de comensales -->
+          <label class="reservation__label" for="guests">
+            Número de comensales *
+          </label>
+
+          <input
+            class="reservation__input"
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder="1-8"
+            min="1"
+            max="8"
+            required
+          />
+
+          <!-- Fecha y hora -->
+          <label class="reservation__label" for="date"> Fecha y hora * </label>
+
+          <input
+            class="reservation__input"
+            type="datetime-local"
+            id="date"
+            name="date"
+            required
+          />
+
+          <!-- Correo electrónico -->
+          <label class="reservation__label" for="email">
+            Tu correo electrónico *
+          </label>
+
+          <input
+            class="reservation__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@email.com"
+            required
+          />
+        </fieldset>
+
+        <!-- Botón -->
+        <button class="reservation__button" type="submit">
+          Reservar una mesa
+        </button>
+
+        <!-- Casilla de verificación -->
+        <label class="reservation__checkbox-label" for="terms">
+          <input
+            class="reservation__checkbox"
+            type="checkbox"
+            id="terms"
+            name="terms"
+            required
+          />
+          Acepto los términos de uso
         </label>
-        <input
-          class="reservation_input"
-          type="number"
-          id="guests"
-          placeholder="1-8"
-          min="1"
-          max="8"
-          required
-        />
-        <!--Fecha y hora-->
-        <label class="reservation_label" for="date"> Fecha y hora * </label>
-        <input
-          class="reservation_input"
-          type="datetime-local"
-          id="date"
-          name="date"
-          required
-        />
-        <!--Correo-->
-        <label class="reservation_label">Tu correo electrónico *</label>
-        <input
-          class="reservation_input"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email@mail.com"
-          required
-        />
-      </fieldset>
-      <!--Botón-->
-      <button class="reservation_button" type="submit">
-        Reservar una mesa
-      </button>
+      </form>
+    </section>
 
-      <!--Checkbox-->
-      <label class="reservation_checkbox-label" for="terms">
-        <input
-          class="reservation_checkbox"
-          type="checkbox"
-          id="terms"
-          name="terms"
-          required
-        />
-        Acepto los términos de uso
-      </label>
-    </form>
-  </section>
-  <!-- PIE DE PÁGINA -->
-<footer class="footer">
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+      <!-- Círculo decorativo -->
+      <div class="footer__circle"></div>
 
-  <!-- Círculo decorativo -->
-  <div class="footer__circle"></div>
+      <!-- Logotipo -->
+      <img
+        class="footer__logo"
+        src="./images/logo_coffeeshop_light.svg"
+        alt="Logotipo Triple Espresso"
+      />
 
-  <!-- Logotipo -->
-  <img
-    class="footer__logo"
-    src="./images/logo_coffeeshop_light.svg"
-    alt="Logotipo de Triple Espresso"
-  >
+      <!-- Redes sociales -->
+      <section class="footer__social" id="footer__social">
+        <h3 class="footer__social-heading">Redes sociales</h3>
 
-  <!-- Redes sociales -->
-  <section class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a
+              class="footer__social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="footer__social-icon"
+                src="./images/facebook_white.svg"
+                alt="Logotipo Facebook"
+              />
+              Facebook
+            </a>
+          </li>
 
-    <h3 class="footer__social-heading">
-      Redes sociales
-    </h3>
+          <li class="footer__social-item">
+            <a
+              class="footer__social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="footer__social-icon"
+                src="./images/instagram_white.svg"
+                alt="Logotipo Instagram"
+              />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <ul class="footer__social-list">
-
-      <li class="footer__social-item">
-        <a
-          class="footer__social-link"
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="footer__social-icon"
-            src="./images/facebook_white.svg"
-            alt=""
-          >
-          Facebook
-        </a>
-      </li>
-
-      <li class="footer__social-item">
-        <a
-          class="footer__social-link"
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="footer__social-icon"
-            src="./images/instagram_white.svg"
-            alt=""
-          >
-          Instagram
-        </a>
-      </li>
-
-    </ul>
-
-  </section>
-
-  <!-- Copyright -->
-  <p class="footer__copyright">
-    © 2026 Tu nombre
-  </p>
-
-</footer>
-    </body>
-
+      <!-- Copyright -->
+      <p class="footer__copyright">© 2026 Claudia Gabriela Almanza V.</p>
+    </footer>
   </body>
 </html>
